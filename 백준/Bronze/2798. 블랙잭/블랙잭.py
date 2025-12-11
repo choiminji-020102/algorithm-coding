@@ -13,9 +13,8 @@ def backtracking():
 
     if len(C) == 3:
         sumC = sum(C)
-        if sumC <= M:
-            if sumC > result:
-                result = sumC
+        if (sumC > result) and (sumC <= M):
+            result = sumC
         return 
 
     for i in range(N):
